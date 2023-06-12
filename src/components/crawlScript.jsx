@@ -1,7 +1,10 @@
-//install puppiteer video https://www.youtube.com/watch?v=JA1-eJjrvxw
+/*install puppiteer video https://www.youtube.com/watch?v=JA1-eJjrvxw
+npm install puppeteer
+yarn remove react-scripts
+yarn add react-scripts@4.0.3*/
 
 import puppeteer from "puppeteer";
-import { fs } from "fs";
+const fs = require("fs");
 
 const url1 =
   "https://asgca.org/architects/?filter_country2_3633a=United%20States&filter_continents_3633a=North%20America";
@@ -167,7 +170,7 @@ function arrayToCSV(bios, filename) {
   console.log("Done!!!!");
 }
 
-await pullLinks(url1);
+// await pullLinks(url1);
 // await pullLinks(url2);
 // await pullLinks(url3);
 // await pullLinks(url4);
@@ -180,5 +183,5 @@ await pullLinks(url1);
 // await pullLinks(url11);
 // await pullLinks(url12);
 // await pullLinks(url13);
-await scrapeProfiles(urlsToScrape);
-exit();
+// await scrapeProfiles(urlsToScrape);
+// exit();

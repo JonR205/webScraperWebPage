@@ -1,8 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
+import {
+  pullLinks,
+  urlsToScrape,
+  scrapeProfiles,
+} from "./components/crawlScript";
 
 function App() {
-  return "hello world";
+  return <button onclick="pullLinks(url1)">Click Me!</button>;
 }
 
 export default App;
